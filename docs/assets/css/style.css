@@ -65,3 +65,13 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+
+
+
+#index-banner {
+  padding: 80px 0 0;
+}
+.parallax-container {
+  background: rgba(0, 0, 0, 0.5);
+}
