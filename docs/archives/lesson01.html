@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>第一回 | HTML/CSS勉強会</title>
+
+  <!-- CSS  -->
+  <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet"> -->
+  <link href="../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/ionicons.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="lesson01.html">第1回</a></li>
+    <!-- <li><a href="lesson02.html">第2回</a></li> -->
+    <li class="divider"></li>
+    <li><a href="../index.html">Top</a></li>
+  </ul>
+  <nav class="teal lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">レッスン<i class="icon ion-arrow-down-b right"></i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="lesson01.html">第1回</a></li>
+        <!-- <li><a href="lesson01.html">第2回</a></li> -->
+        <li class="divider"></li>
+        <li><a href="//github.com/ryoster/study-html">Top</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="icon ion-navicon-round white-text"></i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <h1>HTMLとは</h1>
+      <p>HTMLとは、「HyperText Markup Language」(ハイパーテキスト マークアップ ランゲージ)の略で、一言でいうと<b>文字に意味のある目印をつける言語</b>になります。</p>
+      <ul>
+        <li>
+          <h2>ハイパーテキストとは？</h2>
+          <ul>
+            <li><p>ハイパーテキストとは、文字にハイパーリンクを埋め込むことができるテキストのことです。</p></li>
+            <li><p>ハイパーリンクとは、<b>他のwebページにリンクしてページを繋げたり</b>、<b>「画像/動画/音声などのデータファイルをリンクして埋め込む</b>ことができます。</p></li>
+            <li><p>あの青い文字で下線が引いてあるやつもハイパーリンクの一つ。<a href="#">このような青線リンク</a> はアンカーリンクと呼ばれます。</p></li>
+          </ul>
+        </li>
+        <li>
+          <h2>マークアップとは？</h2>
+          <ul>
+            <li><p>マークアップとは、文字に目印をつけることです。文字にどのような役割を持っているのか…ということを設定することができます。</p></li>
+            <li><p>
+              ぶっちゃけ、マークアップする…というのは、コンピューターに文字の意味を理解させる為に行うんです。。<br>
+              例えば「ジョジョの奇妙な冒険」という文字を一つ取ってもこのように解釈が変わります。<br>
+              <br>
+              　人間 → 「ジョジョの奇妙な冒険」 → 「あ、ジョジョね。漫画のタイトルね。神漫画ね。」<br>
+              　コンピューター → 「%E3%82%B8%E3%83%A7%E3%82%B8%E3%83%A7%E3%81%AE%E5%A5%87%E5%A6%99%E3%81%AA%E5%86%92%E9%99%BA&oq=%E3%82%B8%E3%83%A7%E3%82%B8%E3%83%A7%E3%81%AE%E5%A5%87%E5%A6%99%E3%81%AA%E5%86%92%E9%99%BA」→「%E3%82%B8%E3%83%A7%E3%82%B8%E3%83%A7%E3%81%AE%E5%A5%87%E5%A6%99%E3%81%AA%E5%86%92%E9%99%BA&oq=%E3%82%B8%E3%83%A7%E3%82%B8%E3%83%A7%E3%81%AE%E5%A5%87%E5%A6%99%E3%81%AA%E5%86%92%E9%99%BA」<br>
+              <br>
+              人間は文字から様々なことを想像し、理解することができますが、コンピューターはどこまでいっても同じようにしか解釈しないのです。<br>
+              なので、人間が「この文字はこういう意味があるんだよ」ということをコンピューターに理解させる為にマークアップをします。
+            </p></li>
+            <li><p><small>※ちなみに「マークダウン」というのもあります。マークダウンは、マークアップをより簡単に設定できるようにした言語です。<br>例). ## 見出し、- リスト、** 太文字 ** など</small></p></li>
+          </ul>
+        </li>
+      </ul>
+      <p>マークアップをすることで、コンピューターは文字情報を理解し、表示や解析などを行うことができるようになるのです。</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h1>マークアップする準備をしましょう！</h1>
+      <p>
+        まずはエディターと呼ばれるHTMLを書くのに適したソフトをインストールしましょう。<br>
+        おすすめは<a href="https://atom.io/" target="_blank">Atom</a>か<a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>です。
+      </p>
+      <p>
+        インストールが完了したら、さっそくHTMLファイルを開いてみましょう。（lesson01.html）<br>
+        lesson01.htmlには、お約束である<b>ドキュメントタイプ宣言</b>と<b>headタグ</b>と<b>bodyタグ</b>が書いてあります。<br>
+        まずはこれで準備完了です！<br>
+        <small>※ドキュメントタイプ宣言やheadタグなどを詳しく知りたい方は<a href="http://www.htmq.com/html5/" target="_blank">こちら</a>を参考にしてみてください。</small>
+      </p>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="section">
+        <h1>マークアップをしてみましょう！</h1>
+        <p>
+          …と言っても、何も難しいことはありません。<br>文字の前後に<b>タグ</b>で囲ってあげるだけです。<br>例). &#12296;h1&#12297;ジョジョの奇妙な冒険&#12296;/h1&#12297;<br>
+          では、bodyタグの中に下記のタグをそれぞれ書いてみましょう！
+        </p>
+        <ul>
+          <li><a href="http://www.htmq.com/html5/h.shtml" target="_blank">h1~6</a>：見出し1~6(headlineの略)</li>
+          <li><a href="http://www.htmq.com/html5/p.shtml" target="_blank">p</a>：段落(paragraphの略)</li>
+          <li><a href="http://www.htmq.com/html5/div.shtml" target="_blank">div</a>：区分、なんでも入る箱みたいなもの(divisionの略)</li>
+          <li><a href="http://www.htmq.com/html5/a.shtml" target="_blank">a</a>：リンク(アンカーの略)</li>
+        </ul>
+        <p>
+          マークアップが終わったら<b>ファイルを保存</b>→<b>ブラウザを開いてlesson01.htmlファイルをドラッグ&ドロップ</b>→どういう風に表示されているか確認してみてください。<br>
+          確認が終わったら、またエディターに戻って下記のタグを追加してみてください。
+        </p>
+        <ul>
+          <li><a href="http://www.htmq.com/html5/br.shtml" target="_blank">br</a>：改行(breakの略)　←brタグは<b>空要素</b>というもので、囲まずに&#12296;br&#12297;だけで用いることができます。</li>
+          <li><a href="http://www.htmq.com/html5/ul.shtml" target="_blank">ul</a>：順不同のリスト（unoredered listの略）</li>
+          <li><a href="http://www.htmq.com/html5/ol.shtml" target="_blank">ol</a>：順序のリスト(ordered listの略)</li>
+          <li><a href="http://www.htmq.com/html5/li.shtml" target="_blank">li</a>：リストの項目（list itemの略）　←liタグはulタグ、olタグとセットで使います。ulタグ、olタグの中に入れて書いてみましょう。</li>
+          <li><small>※他にも色々種類があるので、気になる方は<a href="http://www.atmarkit.co.jp/fdotnet/chushin/cheatsheet_02/cheatsheet_02.pdf">こちら</a>もご参照ください。</small></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">第1回のまとめ</h5>
+            <ul class="white-text">
+              <li>・HTMLとは文字に意味のある目印をつける言語</li>
+              <li>・マークアップとは文字に役割を設定すること</li>
+              <li>・タグと呼ばれるもので囲むことでマークアップすることができる</li>
+              <li>・空要素と呼ばれるタグは囲まずに単体だけで使うことができる</li>
+              <li>・ul+liのようにセットで使い、入れ子にしてマークアップすることで文書構造を作っていくのが重要。</li>
+            </ul>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">レッスン一覧</h5>
+            <ul>
+              <li><a class="white-text" href="archives/lesson01.html">第1回</a></li>
+              <!-- <li><a class="white-text" href="archives/lesson02.html">Link 2</a></li> -->
+              <!-- <li><a class="white-text" href="archives/lesson03.html">Link 3</a></li> -->
+              <!-- <li><a class="white-text" href="archives/lesson04.html">Link 4</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Designed by <a class="brown-text text-lighten-3" href="https://www.facebook.com/ryoster">Ryota Aoki</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/init.js"></script>
+  </body>
+</html>
