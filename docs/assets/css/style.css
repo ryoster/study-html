@@ -75,3 +75,66 @@ footer.page-footer {
 .parallax-container {
   background: rgba(0, 0, 0, 0.5);
 }
+
+#analysis .collapsible-body {
+  padding: 0.5em 0;
+}
+#test-swipe-1,
+#test-swipe-2,
+#test-swipe-3 {
+  padding: 1em;
+}
+.wire_box {
+  position: relative;
+}
+.wire_box .rec {
+  height: 40px;
+}
+.wire01 {
+  /*position: absolute;*/
+  padding: 1em;
+  width: 60em;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  text-indent: 1em;
+}
+.wire02 {
+  /*position: absolute;*/
+  padding: 1em;
+  width: 50em;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  text-indent: 1em;
+}
+.wire03 {
+  /*position: absolute;*/
+  padding: 1em;
+  width: 40em;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  text-indent: 1em;
+}
+.wire04 {
+  /*position: absolute;*/
+  padding: 1em;
+  width: 30em;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  text-indent: 1em;
+}
+.wire05 {
+  /*position: absolute;*/
+  padding: 1em;
+  width: 20em;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  text-indent: 1em;
+}
+.wire06 {
+  /*position: absolute;*/
+  padding: 1em;
+  width: 10em;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  text-indent: 1em;
+}

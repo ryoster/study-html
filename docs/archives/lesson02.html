@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>第2回 | HTML/CSS勉強会</title>
+
+  <!-- CSS  -->
+  <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet"> -->
+  <link href="../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/ionicons.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="lesson01.html">第1回</a></li>
+    <li><a href="lesson02.html">第2回</a></li>
+    <!-- <li><a href="lesson03.html">第3回</a></li> -->
+    <!-- <li><a href="lesson04.html">第4回</a></li> -->
+    <!-- <li><a href="lesson05.html">第5回</a></li> -->
+    <!-- <li><a href="lesson06.html">第6回</a></li> -->
+    <li class="divider"></li>
+    <li><a href="../index.html">Top</a></li>
+  </ul>
+  <nav class="teal lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">レッスン<i class="icon ion-arrow-down-b right"></i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="lesson01.html">第1回</a></li>
+        <li><a href="lesson01.html">第2回</a></li>
+        <li class="divider"></li>
+        <li><a href="//github.com/ryoster/study-html">Top</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="icon ion-navicon-round white-text"></i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h1>HTMLを組んでみましょう</h1>
+        <p>
+          前回はHTMLの概要、マークアップの仕方などをやりました。<br>
+          今回は実際にHTMLを組んでWebサイトの基盤を作成していきます。<br>
+          ただ普通に組むだけだとイメージが着きにくいと思うので、いま話題の<a href="https://www.mercari.com/jp/" target="_blank">このサイト</a>を組んでいきましょう！
+        </p>
+        <img id="mercari_boxed" class="materialboxed responsive-img" width="960" src="../assets/images/mercari.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h2>まずは分解してみましょう</h2>
+        <div class="col l6 s12">
+          <p>
+            どういう構造でHTMLが組まれているか、分解して見てみます。某サイトのトップページでは、大きく分けると10個に分解できます。HTMLでは、このように<b>大きな箱(入れ物)を組んでから中に細かい要素を入れていく</b>ということが重要です。
+          </p>
+          <p>
+            基本的にほとんどのサイトも同じように、大きな箱をレイアウトしてから、中に画像だったりボタンだったりと、様々な要素を組み込んでいます。
+          </p>
+          <p class="header">
+            <i class="icon ion-lightbulb yellow-text"></i> ワンポイント <i class="icon ion-lightbulb yellow-text"></i>
+          </p>
+          <p>
+            この大きな箱は&#12296;div&#12297;タグを使う事がかなり多いです。<b>とりあえず最初は要素を入れる箱=div</b>と覚えておきましょう！
+          </p>
+        </div>
+        <div class="col l5 offset-l1 s12">
+          <ul id="analysis" class="collapsible popout" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">01</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari01.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">02</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari02.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">03</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari03.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">04</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari04.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">05</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari05.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">06</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari06.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">07</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari07.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">08</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari08.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">09</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari09.jpg"></div>
+            </li>
+            <li>
+              <div class="collapsible-header">10</div>
+              <div class="collapsible-body"><img class="responsive-img" src="../assets/images/mercari10.jpg"></div>
+            </li>
+          </ul>
+          <p class="center"><i class="icon ion-arrow-up-c"></i> Click me<i class="icon ion-social-snapchat-outline"></i> <i class="icon ion-arrow-up-c"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h2>コード視点で見てみましょう</h2>
+        <p>
+          10個に分解できたところで、次はどういうHTMLを書いているのか見ていきましょう。
+        </p>
+        <ul id="tabs-swipe-analysis" class="tabs">
+          <li class="tab col s4"><a class="active" href="#test-swipe-1">03</a></li>
+          <li class="tab col s4"><a href="#test-swipe-2">04</a></li>
+          <li class="tab col s4"><a href="#test-swipe-3">05</a></li>
+        </ul>
+        <div id="test-swipe-1" class="col s12 wire_box">
+          <div class="wire01 blue-grey">
+            section
+            <div class="wire02 blue-grey lighten-1">
+              div
+              <div class="wire03 blue-grey lighten-2">
+                div
+                <div class="wire04 rec orange lighten-3">h2</div>
+                <div class="wire04 rec yellow lighten-3">p</div>
+                <div class="wire04 blue-grey lighten-3">
+                  div
+                  <div class="wire05 blue lighten-4">
+                    a
+                    <div class="wire06 lime lighten-5">img</div>
+                  </div>
+                  <div class="wire05 blue lighten-4">
+                    a
+                    <div class="wire06 lime lighten-5">img</div>
+                  </div>
+                </div>
+              </div>
+              <div class="wire03 lime lighten-2">img</div>
+            </div>
+          </div>
+        </div>
+        <div id="test-swipe-2" class="col s12">
+          <div class="wire01 blue-grey">
+            section
+            <div class="wire02 orange lighten-1">h2</div>
+            <div class="wire02 green lighten-1">
+              ul
+              <div class="wire03 green lighten-2">
+                li
+                <div class="wire04 orange lighten-3">h3</div>
+                <div class="wire04 lime lighten-3">img</div>
+                <div class="wire04 yellow lighten-3">p</div>
+              </div>
+              <div class="wire03 green lighten-2">
+                li
+                <div class="wire04 orange lighten-3">h3</div>
+                <div class="wire04 lime lighten-3">img</div>
+                <div class="wire04 yellow lighten-3">p</div>
+              </div>
+              <div class="wire03 green lighten-2">
+                li
+                <div class="wire04 orange lighten-3">h3</div>
+                <div class="wire04 lime lighten-3">img</div>
+                <div class="wire04 yellow lighten-3">p</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="test-swipe-3" class="col s12">
+          <div class="wire01 blue-grey">
+            section
+            <div class="wire02 blue-grey lighten-1">
+              div
+              <div class="wire03 orange lighten-2">h2</div>
+              <div class="wire03 yellow lighten-2">p</div>
+              <div class="wire03 blue-grey lighten-2">
+                div
+                <div class="wire04 blue-grey lighten-3">
+                  div
+                  <div class="wire05 blue lighten-4">
+                    a
+                    <div class="wire06 lime lighten-5">img</div>
+                  </div>
+                  <div class="wire05 blue lighten-4">
+                    a
+                    <div class="wire06 lime lighten-5">img</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>いかがでしょうか。見た目では似たように見えてる部分があるかもしれませんが、実はHTML構造的には違ったりしているのです。それではこの構造を実際に書いてみましょう！</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h2>Let's try！<i class="icon ion-thumbsup orange-text accent-3"></i></h2>
+        <p>
+          残り7個を組み立ててみましょう！
+        </p>
+        <div>
+          <h5>組み立て方</h5>
+          <ul>
+            <li>・Chromeのデベロッパーツールを使ってみる</li>
+            <li>
+              <ol>
+                <li>1. Chromeで<a href="https://www.mercari.com/jp/" target="_blank">某サイト</a>にアクセス</li>
+                <li>2. 右クリック<i class="icon ion-ios-arrow-thin-right"></i>検証</li>
+                <li>3. インスペクター(<i class="icon ion-android-open">っぽいやつ</i>)を押して気になる箇所をクリック</li>
+                <li></li>
+                <li></li>
+              </ol>
+            </li>
+            <li>　　　　　　　　or</li>
+            <li>・<a href="http://www.atmarkit.co.jp/fdotnet/chushin/cheatsheet_02/cheatsheet_02.pdf" target="_blank">HTMLのチートシート</a>を参考にソウゾウして組み当ててみる</li>
+            <li>　　　　　　　　or</li>
+            <li>・とりあえず全部divでやってみるｗ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">第2回のまとめ</h5>
+            <ul class="white-text">
+              <li>・HTMLは文書構造を作ります</li>
+              <li>・大きな入れ物から作っていきましょう</li>
+              <li>・入れ物はdivを使うことが多いです</li>
+              <li>・他のWebサイトの作り方を参考にしてみよう</li>
+              <li>・Chromeのデベロッパーツールを使うとHTML構造が見れます</li>
+            </ul>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">レッスン一覧</h5>
+            <ul>
+              <li><a class="white-text" href="archives/lesson01.html">第1回</a></li>
+              <li><a class="white-text" href="archives/lesson02.html">第2回</a></li>
+              <!-- <li><a class="white-text" href="archives/lesson03.html">第3回</a></li> -->
+              <!-- <li><a class="white-text" href="archives/lesson04.html">第4回</a></li> -->
+              <!-- <li><a class="white-text" href="archives/lesson05.html">第5回</a></li> -->
+              <!-- <li><a class="white-text" href="archives/lesson06.html">第6回</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Designed by <a class="brown-text text-lighten-3" href="https://www.facebook.com/ryoster">Ryota Aoki</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/init.js"></script>
+    <script src="../assets/js/style.js"></script>
+  </body>
+</html>

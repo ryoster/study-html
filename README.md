@@ -22,6 +22,17 @@ Lesson
 などなど、些細なことなんでもOKです！
 [issue](https://github.com/ryoster/study-html/issues)にバシバシとご寄稿いただければ幸いです！
 
+## スケジュール
+|日程|タイトル|
+|:----:|:----|
+|5/26|HTMLとは？|
+|5/31|HTMLを組んでみよう|
+|6/7|CSSとは？|
+|6/14|CSSで装飾してみよう|
+|6/21|テーブルについて|
+|6/28|本番用HTMLメールの作成|
+|7/05|本番用HTMLメール選考会|
+
 ## 余談
 参考サイトは[MaterializeCSS](http://materializecss.com/about.html)というライブラリを使いました。
 実装に掛かった時間は15分くらいです。
