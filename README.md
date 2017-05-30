@@ -3,17 +3,15 @@
 初めて参加する方は **Clone or download** から **Download ZIP** を選択してください。
 
 ## ダウンロードファイルの説明
-├ docs/　←勉強会で参考にする[Webサイト](https://ryoster.github.io/study-html/index.html)が入ってるフォルダ（使わない）
-├ **lesson/　←勉強会で使う素材が入ってるフォルダ**
-├ .gitignore　←意図的にgitの追跡対象外にしたいものを指定するファイル（まぁ気にしないでください）
+├ docs/　←勉強会で参考にする[Webサイト](https://ryoster.github.io/study-html/index.html)が入ってるフォルダ（使わない）  
+├ **lesson/　←勉強会で使う素材が入ってるフォルダ**  
+├ .gitignore　←意図的にgitの追跡対象外にしたいものを指定するファイル（まぁ気にしないでください）  
 └ README.md　←概要などが書いてあるファイル。今皆さんが見てるのは、このREADME.mdに書かれてる内容です。
 
 ## 参考サイト
-[top/](https://ryoster.github.io/study-html/index.html)
-　├ Lesson
-　│　└ [第1回](https://ryoster.github.io/study-html/20170526.html)
-　├ etc/
-　├ usr/
+[top](https://ryoster.github.io/study-html/index.html)  
+Lesson  
+  └ [第1回](https://ryoster.github.io/study-html/20170526.html)  
 
 ## 勉強会に関する質問について
 - 勉強会でわからなかった事
