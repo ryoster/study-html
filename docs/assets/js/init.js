@@ -7,6 +7,9 @@
 
     // add
     $('.dropdown-button').dropdown();
+    $(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+    });
 
 
   }); // end of document ready
