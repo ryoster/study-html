@@ -1,0 +1,181 @@
+/*==================================================
+　ここの下にCSSを付け加えていきましょう
+==================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================================
+　ここから下は触らないでください
+==================================================*/
+
+.style-section {
+  padding: 32px;
+}
+.style-head {
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #36BC63;
+  border-radius: 6px;
+  background: rgba(96, 196, 164, 0.24);
+  padding: 16px;
+}
+
+/* メルカリ用 */
+@media screen and (min-width: 1068px) {
+  .top-main-visual {
+      height: 390px;
+  }
+  .top-main-visual>div {
+      max-width: 860px;
+  }
+  .top-main-visual h2 {
+      font-size: 60px;
+  }
+  .top-main-visual p {
+      font-size: 18px;
+  }
+  .top-main-visual-store>a {
+    width: 170px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-main-visual {
+      display: block;
+  }
+}
+.top-main-visual {
+    display: none;
+    height: 290px;
+    background: url(../images/);
+    background-size: cover;
+}
+.top-main-visual>div {
+    position: relative;
+    max-width: 730px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* 左側wrapper */
+.top-main-visual-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+/* h2 */
+.top-main-visual h2, .top-main-visual p {
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.top-main-visual h2 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+.font-white {
+    color: #fff;
+}
+
+/* p */
+main-visual p {
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.top-main-visual p {
+    margin: 16px 0 0;
+    font-size: 16px;
+    line-height: 1.77778;
+}
+
+/* Store */
+.top-main-visual-store {
+    margin: 24px 0 0;
+    line-height: 0;
+}
+.top-main-visual-store>a:first-child {
+    margin: 0;
+}
+.top-main-visual-store>a {
+    display: inline-block;
+    width: 128px;
+    height: 38px;
+    margin: 0 0 0 8px;
+}
+.top-main-visual-store>a img {
+    width: 100%;
+}
+
+/*　右側wrapper　*/
+.top-main-visual>div>img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+/* 共通 */
+* {
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+*, ::before, ::after {
+    border-style: solid;
+    border-width: 0;
+}
+* {
+    font-size: inherit;
+    line-height: inherit;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+a {
+    color: #0099e8;
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}

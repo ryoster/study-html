@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>第3回 | HTML/CSS勉強会</title>
+
+  <!-- CSS  -->
+  <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet"> -->
+  <link href="../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/ionicons.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="lesson01.html">第1回</a></li>
+    <li><a href="lesson02.html">第2回</a></li>
+    <li><a href="lesson03.html">第3回</a></li>
+    <!-- <li><a href="lesson04.html">第4回</a></li> -->
+    <!-- <li><a href="lesson05.html">第5回</a></li> -->
+    <!-- <li><a href="lesson06.html">第6回</a></li> -->
+    <li class="divider"></li>
+    <li><a href="../index.html">Top</a></li>
+  </ul>
+  <nav class="teal lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">レッスン<i class="icon ion-arrow-down-b right"></i></a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="lesson01.html">第1回</a></li>
+        <li><a href="lesson02.html">第2回</a></li>
+        <li><a href="lesson03.html">第3回</a></li>
+        <li class="divider"></li>
+        <li><a href="//github.com/ryoster/study-html">Top</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="icon ion-navicon-round white-text"></i></a>
+    </div>
+  </nav>
+
+  <div class="container"><h1>CSSとは？</h1></div>
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h2>CSSとは何か知ってみよう</h2>
+        <p>
+          CSSとは<span style="font-style: italic;">カスケーディングスタイルシート</span>の略で、<b>ウェブページを装飾する</b>ための言語です。<br>
+          <small>※<span style="font-style: italic;">カスケーディング</span> <i class="icon ion-arrow-right-c"></i> 連続したもの 数珠つなぎになったもの(原義は連なった小さな滝)</small><br>
+          HTMLは機会の為に施すものに対して、CSSは人間の為に施すものです。<br>
+          例えば同じpタグを使っても、CSSを使えばこの様に見た目を変えることができます。
+        </p>
+        <div class="col l4 s12">
+          <p style="font-size: 10px; line-height: 1; letter-space: -1px;">
+            あ…ありのまま 今　起こった事を話すぜ！<br>
+            「おれは　奴の前で階段を登っていたと思ったら　いつのまにか降りていた」<br>
+            な…　何を言っているのか　わからねーと思うが　おれも　何をされたのか　わからなかった…<br>
+            頭がどうにかなりそうだった…　催眠術だとか超スピードだとかそんなチャチなもんじゃあ　断じてねえ<br>
+            もっと恐ろしいものの片鱗を　味わったぜ…
+          </p>
+        </div>
+        <div class="col l4 s12">
+          <p style="color: red; line-height: 1.2;">
+            あ…ありのまま 今　起こった事を話すぜ！<br>
+            「おれは　奴の前で階段を登っていたと思ったら　いつのまにか降りていた」<br>
+            な…　何を言っているのか　わからねーと思うが　おれも　何をされたのか　わからなかった…<br>
+            頭がどうにかなりそうだった…　催眠術だとか超スピードだとかそんなチャチなもんじゃあ　断じてねえ<br>
+            もっと恐ろしいものの片鱗を　味わったぜ…
+          </p>
+        </div>
+        <div class="col l4 s12">
+          <p style="font-size: 20px; font-weight: bold; line-height: 1.4; background: -webkit-linear-gradient(#89f7fe, #66a6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            あ…ありのまま 今　起こった事を話すぜ！<br>
+            「おれは　奴の前で階段を登っていたと思ったら　いつのまにか降りていた」<br>
+            な…　何を言っているのか　わからねーと思うが　おれも　何をされたのか　わからなかった…<br>
+            頭がどうにかなりそうだった…　催眠術だとか超スピードだとかそんなチャチなもんじゃあ　断じてねえ<br>
+            もっと恐ろしいものの片鱗を　味わったぜ…
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <h2>CSSを当ててみましょう</h2>
+        <div class="col l12 s12">
+          <p>
+            CSSを当てる方法として大きく3パターンあります。
+          </p>
+          <div class="col l4 s12">
+            <h3 style="font-size: 18px; font-weight: bold;">1. HTMLタグに直接書く</h3>
+            <p>
+              HTMLタグにstyle=""を追加します。<br>
+              " "←この中にCSSを書いていくことにより、スタイルを当てることができます
+            </p>
+            <p style="background: #dddddd; border-radius: 4px; padding: 8px;">
+              &#12296;p style="color: red;"&#12297;
+            </p>
+          </div>
+          <div class="col l4 s12">
+            <h3 style="font-size: 18px; font-weight: bold;">2. head内にまとめて書く</h3>
+            <p>
+              &#12296;head&#12297;<br>
+              <i style="margin: 0 0 0 16px;">ここの間に追加します</i><br>
+              &#12296;/head&#12297;<br>
+              この時は&#12296;style&#12297;タグを使用することで、スタイル内容をまとめて書くことが出来ます。<br>
+            </p>
+            <p style="background: #dddddd; border-radius: 4px; padding: 8px;">
+              &#12296;style&#12297;<br>
+              p {<br>
+                color: red;<br>
+              }<br>
+              &#12296;/style&#12297;<br>
+            </p>
+          </div>
+          <div class="col l4 s12">
+            <h3 style="font-size: 18px; font-weight: bold;">3. 外部CSSファイルにまとめて書く</h3>
+            <p>
+              名前.cssといったCSSファイルを作成し、そこにスタイル内容をまとめて書くことが出来ます。<br>
+              そのCSSファイルをheadタグ内で読み込んであげることで、スタイルを当てることが出来ます。
+            </p>
+            <p style="background: #dddddd; border-radius: 4px; padding: 8px;">
+              &#12296;style&#12297;<br>
+              &#12296;link href="CSSファイルのパス" type="text/css" rel="stylesheet"&#12297;
+              &#12296;/style&#12297;<br>
+            </p>
+          </div>
+        </div>
+        <p><i class="icon ion-lightbulb yellow-text"></i> ワンポイント <i class="icon ion-lightbulb yellow-text"></i>1,2,3で同じスタイルを同時に読み込ませると、1のスタイルが優先されます。</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="section">
+          <h2>スタイルを当てる範囲を指定してみよう</h2>
+          <div class="col l12 s12">
+            <p>
+              スタイルを当てるには、<b>セレクタ</b>を指定します。<br>
+              セレクタは色々あるのですが、よく使われる王道は4つです。<br>
+              <small>参考→<a href="http://www.htmq.com/csskihon/005.shtml" target="_blank">セレクタの種類</a></small>
+            </p>
+            <div class="col l3 s12">
+              <pre class="pre-hoge" alt="HTML要素">
+                <code class="pre-hoge">
+                  <span class="token selector">p </span><span class="token punctuation">{</span>
+                  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                </code>
+              </pre>
+            </div>
+            <div class="col l3 s12">
+              <pre class="pre-hoge" alt="class">
+                <code class="pre-hoge">
+                  <span class="token selector">p.jotaro </span><span class="token punctuation">{</span>
+                  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                </code>
+              </pre>
+            </div>
+            <div class="col l3 s12">
+              <pre class="pre-hoge" alt="id">
+                <code class="pre-hoge">
+                  <span class="token selector">p#josuke </span><span class="token punctuation">{</span>
+                  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                </code>
+              </pre>
+            </div>
+            <div class="col l3 s12">
+              <pre class="pre-hoge" alt="擬似クラス">
+                <code class="pre-hoge">
+                  <span class="token selector">p:hover </span><span class="token punctuation">{</span>
+                  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span>
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">第2回のまとめ</h5>
+            <ul class="white-text">
+              <li>・HTMLは文書構造を作ります</li>
+              <li>・大きな入れ物から作っていきましょう</li>
+              <li>・入れ物はdivを使うことが多いです</li>
+              <li>・他のWebサイトの作り方を参考にしてみよう</li>
+              <li>・Chromeのデベロッパーツールを使うとHTML構造が見れます</li>
+            </ul>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">レッスン一覧</h5>
+            <ul>
+              <li><a class="white-text" href="lesson01.html">第1回</a></li>
+              <li><a class="white-text" href="lesson02.html">第2回</a></li>
+              <li><a class="white-text" href="lesson03.html">第3回</a></li>
+              <!-- <li><a class="white-text" href="./lesson04.html">第4回</a></li> -->
+              <!-- <li><a class="white-text" href="./lesson05.html">第5回</a></li> -->
+              <!-- <li><a class="white-text" href="./lesson06.html">第6回</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Designed by <a class="brown-text text-lighten-3" href="https://www.facebook.com/ryoster">Ryota Aoki</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="../assets/js/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+    <script src="../assets/js/init.js"></script>
+    <script src="../assets/js/style.js"></script>
+  </body>
+</html>

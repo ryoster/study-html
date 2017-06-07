@@ -11,7 +11,9 @@
 ## 参考サイト
 [top](https://ryoster.github.io/study-html/index.html)  
 Lesson  
-  └ [第1回](https://ryoster.github.io/study-html/20170526.html)  
+  ├ [第1回](https://ryoster.github.io/study-html/archives/lesson01.html)  
+  ├ [第2回](https://ryoster.github.io/study-html/archives/lesson02.html)  
+  └ [第3回](https://ryoster.github.io/study-html/archives/lesson03.html)  
 
 ## 勉強会に関する質問について
 - 勉強会でわからなかった事
